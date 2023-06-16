@@ -1,3 +1,15 @@
+Tables:
+st_spatial_reference_systems
+st_aux_spatial_reference_systems
+sqlite_sequence
+st_geometry_columns
+st_vtspindex_interface
+AISVesselTracks2022
+st_spindexAISVesselTracks2022_Shape
+st_spindexAISVesselTracks2022_Shape_rowid
+st_spindexAISVesselTracks2022_Shape_node
+st_spindexAISVesselTracks2022_Shape_parent
+
 Table Details:
 ('table', 'st_spatial_reference_systems', 'st_spatial_reference_systems', 0, 'CREATE VIRTUAL TABLE st_spatial_reference_systems USING VSRS()')
 ('table', 'st_aux_spatial_reference_systems', 'st_aux_spatial_reference_systems', 2, 'CREATE TABLE st_aux_spatial_reference_systems (srid           INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, auth_name      text(256), auth_srid      int32, srtext         text(2048), falsex         float64 NOT NULL, falsey         float64 NOT NULL, xyunits        float64 NOT NULL, falsez         float64 DEFAULT 0.0, zunits         float64 DEFAULT 1.0, falsem         float64 DEFAULT 0.0, munits         float64 DEFAULT 1.0, xycluster_tol  float64, zcluster_tol   float64, mcluster_tol   float64, object_flags   int32 DEFAULT 1)')

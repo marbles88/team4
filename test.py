@@ -1,6 +1,7 @@
 import pandas
 import sqlite3
 import os
+import csv
 
 # Connect to the SQL file
 conn = sqlite3.connect('AISVesselTracks2022.sqlite')
@@ -8,24 +9,27 @@ conn = sqlite3.connect('AISVesselTracks2022.sqlite')
 # Create a cursor object to interact with the database
 cursor = conn.cursor()
 
-query = '''
-    SELECT OBJECTID, MMSI
-    FROM AISVesselTracks2022;
-'''
-# Execute the query
-cursor.execute(query)
 
-# Fetch the results
-results = cursor.fetchall()
+# query = '''
+#     SELECT *
+#     FROM AISVesselTracks2022;
+#     WHERE MMSI = '477237100';
+# '''
+# # Execute the query
+# cursor.execute(query)
+
+# # Fetch the results
+# results = cursor.fetchall()
+# print(results)
 
 
-# Define the path and filename of the output CSV file
-csv_file = 'output.csv'
+# # Define the path and filename of the output CSV file
+# csv_file = '477237100.csv'
 
-# Write the rows to the CSV file
-with open(csv_file, 'w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerows(results)
+# # Write the rows to the CSV file
+# with open(csv_file, 'w', newline='') as file:
+#     writer = csv.writer(file)
+#     writer.writerows(results)
 
 # # Get the schema of a specific table
 # table_name = 'st_spindexAISVesselTracks2022_Shape_rowid'
