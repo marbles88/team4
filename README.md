@@ -1,5 +1,6 @@
 # team4
 Authors: Richard Ky, Amelia Jobe, Akshay Dhamsania, and Sandra Luo
+
 Mentors: Edoardo Serra, Sumit Purohit
 
 # Naval Vessels
